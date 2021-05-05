@@ -6,7 +6,7 @@ pipeline {
    }
    stages {
        stage('Build') {
-           agent {
+           agent none{
                 image 'golang'
              }
            steps {
