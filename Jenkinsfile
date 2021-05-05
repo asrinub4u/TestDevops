@@ -6,9 +6,9 @@ pipeline {
    }
    stages {
        stage('Build') {
-           agent any{
-                 image 'golang'
-           }
+           agent any {
+                image 'golang'
+             }
            steps {
                // Create our project directory.
                sh 'cd ${GOPATH}/src'
