@@ -20,7 +20,7 @@ pipeline {
            }    
        }
        stage('Test') {
-           agent any {
+           agent  {
               image 'golang'
            }
            steps {                
